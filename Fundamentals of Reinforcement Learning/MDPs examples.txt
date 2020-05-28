@@ -1,0 +1,6 @@
+A robovac that cleans the floor can be modelled as an MDP. The state of the robovac is its current position in the room. The action will be to move in one of 8 directions (E,W,S,N,SE,SW,NE,NW). It will be rewarded +1 if it is in motion for more than 2 seconds and -1 if it is stationary for more than 2 seconds.
+The goal is to collect maximum points by the end of 30 minutes of cleaning.
+
+Watering the plants in the garden. The state is the hose that is connected to a water outlet and watering a particular plant. Action is to turn the direction of the hose 30 degrees to the right after 5 seconds to water the next plant. Reward +1 for every turn to the right after 5 seconds. -10 if it stays in the current position for longer than 5 seconds, or it it moves left. Goal is to water all the plants in the allotted time.
+
+An amazon box picking robot trying to pick correct boxes for orders and taking them to the hub for shipping. The agent here is the robot and the actions are the robot moving and picking boxes and dropping them off. The rewards can be +10 for collecting and dropping a box in the hub. Crashing other robots and shelves is -100 and each foot distance travelled is -1.
